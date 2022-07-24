@@ -20,7 +20,7 @@ public class GetListChat {
     public void GetListChat()
     {
         System.out.println("Successfully");
-        getAccessToken("vanvanvanvanvanvan@gmail.com","123456");
+        getAccessToken("van5@gmail.com","123456");
         JSONObject request = new JSONObject();
         baseURI = constant.BaseURL;
         Response response = RestAssured.

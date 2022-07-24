@@ -11,11 +11,15 @@ import org.junit.Test;
 
 
 public class readNotifications {
+    private String ACCESS_TOKEN;
+    public void getAccessToken(String email, String password) {
+        this.ACCESS_TOKEN = login.getAccessToken(email, password);
+    }
     @Test
     public void ReadNotifications() {
         System.out.println("Successfully");
-        String ACCESS_TOKEN = login.getAccessToken();
         RestAssured.baseURI = constant.BaseURL;
+        getAccessToken("van5@gmail.com","123456");
         RequestSpecification httpRequest = RestAssured.given();
 
         JSONObject request = new JSONObject();
@@ -24,12 +28,12 @@ public class readNotifications {
 
         Response response = httpRequest.
                 header("Content-Type","application/json").
-                header("Authorization",("bearer" + ACCESS_TOKEN)).
+                header("Authorization",("bearer" + this.ACCESS_TOKEN)).
                 contentType(ContentType.JSON).
                 accept(ContentType.JSON).
                 body(request.toJSONString()).
                 when().
-                get("/notifications/read/1795");
+                get("/notifications/read/2332");
         ResponseBody body = response.getBody();
         System.out.println(body.asPrettyString());
     }

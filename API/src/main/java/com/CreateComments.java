@@ -81,7 +81,7 @@ public class CreateComments {
 //        getAuctionID();
         System.out.println("\nCreateComment test 1: Successfully ");
         String rq=this.creRequest("Hoang Thanh Thang Long 1","4");
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com","123456");
         this.callAPI(rq, "1749");
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1000") && !this.messageResponse.equals(""))
@@ -93,7 +93,7 @@ public class CreateComments {
     public void CreateComment2() {
         System.out.println("\nCreateComment test 2: Phien dau gia chua duoc duyet ");
         String rq=this.creRequest("Hoang Thanh Thang Long 1",null);
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com","123456");
         this.callAPI(rq, "2134");
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1008") && !this.messageResponse.equals(""))
@@ -104,7 +104,7 @@ public class CreateComments {
     public void CreateComment3() {
         System.out.println("\nCreateComment test 3: Content is null ");
         String rq=this.creRequest("",null);
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com","123456");
         this.callAPI(rq, "1749");
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1003") && !this.messageResponse.equals(""))

@@ -75,7 +75,7 @@ public class GetListBid {
     public void GetlistBid1() {
         System.out.println("\nGetListBid 1: Successfully ");
         String rq=this.creRequest("1","1");
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com","123456");
         this.callAPI(rq, "1749");
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1000") && !this.messageResponse.equals(""))
@@ -86,7 +86,7 @@ public class GetListBid {
     public void GetListBid2() {
         System.out.println("\nGetListBid 2: Index Null ");
         String rq=this.creRequest(null,"1");
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com","123456");
         this.callAPI(rq, "1749");
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1001") && !this.messageResponse.equals(""))
@@ -97,7 +97,7 @@ public class GetListBid {
     public void GetListBid3() {
         System.out.println("\nGetListBid 3: Count Null ");
         String rq=this.creRequest("1",null);
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com","123456");
         this.callAPI(rq, "1749");
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1001") && !this.messageResponse.equals(""))
@@ -108,7 +108,7 @@ public class GetListBid {
     public void GetListBid4() {
         System.out.println("\nGetListBid 4: Count and index Null ");
         String rq=this.creRequest(null,null);
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com","123456");
         this.callAPI(rq, "1749");
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1001") && !this.messageResponse.equals(""))

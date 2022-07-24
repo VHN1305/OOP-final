@@ -78,7 +78,7 @@ public class GetNotifications {
     public void GetNotification1() {
         System.out.println("\nGetNotification: Successfully ");
         String rq=this.creRequest("1","1",null);
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("van5@gmail.com","123456");
         this.callAPI(rq);
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1000") && !this.messageResponse.equals(""))
@@ -89,7 +89,8 @@ public class GetNotifications {
     public void GetNotification2() {
         System.out.println("\nGetNotification 2: Index Null ");
         String rq=this.creRequest(null,"1",null);
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("van5@gmail.com","123456");
+
         this.callAPI(rq);
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1001") && !this.messageResponse.equals(""))
@@ -100,7 +101,8 @@ public class GetNotifications {
     public void GetNotification3() {
         System.out.println("\nGGetNotification 3: Count Null ");
         String rq=this.creRequest("1",null,null);
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("van5@gmail.com","123456");
+
         this.callAPI(rq);
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1001") && !this.messageResponse.equals(""))
@@ -111,7 +113,8 @@ public class GetNotifications {
     public void GetNotification() {
         System.out.println("\nGGetNotification 4: Count and index Null ");
         String rq=this.creRequest(null,null,null);
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("van5@gmail.com","123456");
+
         this.callAPI(rq);
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1001") && !this.messageResponse.equals(""))

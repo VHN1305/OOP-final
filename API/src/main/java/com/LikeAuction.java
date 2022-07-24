@@ -72,7 +72,7 @@ public class LikeAuction {
     public void LikeAuction1() {
         System.out.println("\nLike Auction test 1: Successfully ");
         String rq=this.creRequest();
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com","123456");
         this.callAPI(rq,"1749");
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1000") && !this.messageResponse.equals(""))
@@ -83,7 +83,7 @@ public class LikeAuction {
     public void LikeAuction2() {
         System.out.println("\nLike Auction test 1: Auction chua duyet");
         String rq=this.creRequest();
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com","123456");
         this.callAPI(rq,"2166");
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1000") && !this.messageResponse.equals(""))
@@ -94,7 +94,7 @@ public class LikeAuction {
     public void LikeAuction3() {
         System.out.println("\nLike Auction test 3: Auction khong ton tai");
         String rq=this.creRequest();
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com","123456");
         this.callAPI(rq,"10000");
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1001") && !this.messageResponse.equals(""))

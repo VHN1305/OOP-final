@@ -25,7 +25,7 @@ public class GetListAuctions {
                 .header("Authorization",("bearer" + ACCESS_TOKEN))
                 .contentType(ContentType.JSON)
                 .accept(ContentType.JSON)
-                .when().get("/auctions/7");
+                .when().get("/auctions/99");
         ResponseBody body = response.getBody();
         System.out.println(body.asPrettyString());
     }

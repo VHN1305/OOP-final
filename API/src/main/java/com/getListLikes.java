@@ -81,7 +81,7 @@ public class getListLikes {
     public void GetListLike1() {
         System.out.println("\nGetListLike 1: Successfully ");
         String rq=this.creRequest("1","1");
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com","123456");
         this.callAPI(rq, "0");
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1000") && !this.messageResponse.equals(""))
@@ -92,7 +92,7 @@ public class getListLikes {
     public void GetListLike2() {
         System.out.println("\nGetListLike 2: Index Null ");
         String rq=this.creRequest(null,"1");
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com","123456");
         this.callAPI(rq, "0");
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1001") && !this.messageResponse.equals(""))
@@ -103,7 +103,7 @@ public class getListLikes {
     public void GetListLike3() {
         System.out.println("\nGetListLike 3: Count Null ");
         String rq=this.creRequest("1",null);
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com","123456");
         this.callAPI(rq, "0");
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1001") && !this.messageResponse.equals(""))
@@ -114,7 +114,7 @@ public class getListLikes {
     public void GetListLike4() {
         System.out.println("\nGetListLike 3: Count and index Null ");
         String rq=this.creRequest(null,null);
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com","123456");
         this.callAPI(rq, "0");
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1001") && !this.messageResponse.equals(""))

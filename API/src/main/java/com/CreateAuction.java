@@ -44,7 +44,6 @@ public class CreateAuction {
     private String startDayOfAuction;
     private String endDayOfAuction;
 
-    @Test
     public String getAuctionId(int CategoryId, String title) {
         setStartDayOfAuction();
         String token = login.getAccessToken();
@@ -117,7 +116,7 @@ public class CreateAuction {
         String randomNameofAuction = AuctionName.getStringWithFixedLength(10);
         setStartDayOfAuction();
         System.out.println("\nCreate_auctions test 1: access data");
-        this.getAccessToken("vanvanvanvanvan@gmail.com", "123456");
+        this.getAccessToken("vanvanvanvanvanvanvanvan@gmail.com", "123456");
         String rq = this.creRequest("1", this.startDayOfAuction, this.endDayOfAuction, randomNameofAuction);
         this.callAPI(rq);
         System.out.println("Code: " + this.codeResponse + "\nMessage: " + this.messageResponse + "\nData:" + this.dataResponse);
@@ -132,7 +131,8 @@ public class CreateAuction {
     public void Test2() {
         setStartDayOfAuction();
         System.out.println("\nCreate_auctions test 2: title exist");
-        this.getAccessToken("vanvanvanvanvan@gmail.com", "123456");
+        this.getAccessToken("vanvanvanvanvanvanvanvan@gmail.com", "123456");
+
         String rq = this.creRequest("1", this.startDayOfAuction, this.endDayOfAuction, "Thor - Love and Thunder duo - tickets");
         this.callAPI(rq);
         System.out.println("Code: " + this.codeResponse + "\nMessage: " + this.messageResponse + "\nData:" + this.dataResponse);
@@ -145,7 +145,8 @@ public class CreateAuction {
         String randomNameofAuction = AuctionName.getStringWithFixedLength(10);
         setStartDayOfAuction();
         System.out.println("\nCreate_auctions test 3: category_id null");
-        this.getAccessToken("vanvanvanvanvan@gmail.com", "123456");
+        this.getAccessToken("vanvanvanvanvanvanvanvan@gmail.com", "123456");
+
         String rq = this.creRequest("", this.startDayOfAuction, this.endDayOfAuction, randomNameofAuction);
         this.callAPI(rq);
         System.out.println("Code: " + this.codeResponse + "\nMessage: " + this.messageResponse + "\nData:" + this.dataResponse);
@@ -158,7 +159,8 @@ public class CreateAuction {
         String randomNameofAuction = AuctionName.getStringWithFixedLength(10);
         setStartDayOfAuction();
         System.out.println("\nCreate_auctions test 4: start date null");
-        this.getAccessToken("vanvanvanvanvan@gmail.com", "123456");
+        this.getAccessToken("vanvanvanvanvanvanvanvan@gmail.com", "123456");
+
         String rq = this.creRequest("1", "", this.endDayOfAuction, randomNameofAuction);
         this.callAPI(rq);
         System.out.println("Code: " + this.codeResponse + "\nMessage: " + this.messageResponse + "\nData:" + this.dataResponse);
@@ -170,7 +172,8 @@ public class CreateAuction {
     public void Test5() {
         String randomNameofAuction = AuctionName.getStringWithFixedLength(10);
         System.out.println("\nCreate_auctions test 5: start date befor present time");
-        this.getAccessToken("vanvanvanvanvan@gmail.com", "123456");
+        this.getAccessToken("vanvanvanvanvanvanvanvan@gmail.com", "123456");
+
         String rq = this.creRequest("1", "2022-1-1", "2023-3-1", randomNameofAuction);
         this.callAPI(rq);
         System.out.println("Code: " + this.codeResponse + "\nMessage: " + this.messageResponse + "\nData:" + this.dataResponse);
@@ -182,7 +185,8 @@ public class CreateAuction {
     public void Test6() {
         String randomNameofAuction = AuctionName.getStringWithFixedLength(10);
         System.out.println("\nCreate_auctions test 6: end date null");
-        this.getAccessToken("vanvanvanvanvan@gmail.com", "123456");
+        this.getAccessToken("vanvanvanvanvanvanvanvan@gmail.com", "123456");
+
         String rq = this.creRequest("1", "2023-1-1", "", randomNameofAuction);
         this.callAPI(rq);
         System.out.println("Code: " + this.codeResponse + "\nMessage: " + this.messageResponse + "\nData:" + this.dataResponse);
@@ -195,7 +199,8 @@ public class CreateAuction {
     public void Test7() {
         String randomNameofAuction = AuctionName.getStringWithFixedLength(10);
         System.out.println("\nCreate_auctions test 7: end date earlier than start date");
-        this.getAccessToken("vanvanvanvanvan@gmail.com", "123456");
+        this.getAccessToken("vanvanvanvanvanvanvanvan@gmail.com", "123456");
+
         String rq = this.creRequest("1", "2023-1-2", "2023-1-1", randomNameofAuction);
         this.callAPI(rq);
         System.out.println("Code: " + this.codeResponse + "\nMessage: " + this.messageResponse + "\nData:" + this.dataResponse);
@@ -206,7 +211,8 @@ public class CreateAuction {
     @Test
     public void Test8() {
         System.out.println("\nCreate_auctions test 8: title null");
-        this.getAccessToken("vanvanvanvanvan@gmail.com", "123456");
+        this.getAccessToken("vanvanvanvanvanvanvanvan@gmail.com", "123456");
+
         String rq = this.creRequest("1", "2023-1-1", "2023-3-1", "");
         this.callAPI(rq);
         System.out.println("Code: " + this.codeResponse + "\nMessage: " + this.messageResponse + "\nData:" + this.dataResponse);
@@ -218,7 +224,8 @@ public class CreateAuction {
     public void Test9() {
         String randomNameofAuction = AuctionName.getStringWithFixedLength(10);
         System.out.println("\nCreate_auctions test 9: start date incorrect format");
-        this.getAccessToken("vanvanvanvanvan@gmail.com", "123456");
+        this.getAccessToken("vanvanvanvanvanvanvanvan@gmail.com", "123456");
+
         String rq = this.creRequest("1", "2023-13-1", "2023-3-1", randomNameofAuction);
         this.callAPI(rq);
         System.out.println("Code: " + this.codeResponse + "\nMessage: " + this.messageResponse + "\nData:" + this.dataResponse);
@@ -231,7 +238,8 @@ public class CreateAuction {
         String randomNameofAuction = AuctionName.getStringWithFixedLength(10);
         setStartDayOfAuction();
         System.out.println("\nCreate_auctions test 10: CateGory_Id is out of 1 and 5");
-        this.getAccessToken("vanvanvanvanvan@gmail.com", "123456");
+        this.getAccessToken("vanvanvanvanvanvanvanvan@gmail.com", "123456");
+
         String rq = this.creRequest("6", this.startDayOfAuction, this.endDayOfAuction, randomNameofAuction);
         this.callAPI(rq);
         System.out.println("Code: " + this.codeResponse + "\nMessage: " + this.messageResponse + "\nData:" + this.dataResponse);

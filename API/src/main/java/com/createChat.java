@@ -72,7 +72,7 @@ public class createChat {
     public void CreatChat1() {
         System.out.println("\nCreatChat 1: Successfully ");
         String rq=this.creRequest();
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("van5@gmail.com","123456");
         this.callAPI(rq,"725");
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1000") && !this.messageResponse.equals(""))
@@ -83,7 +83,7 @@ public class createChat {
     public void CreatChat2() {
         System.out.println("\nCreatChat 2: Chat with User khong ton tai ");
         String rq=this.creRequest();
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("van5@gmail.com","123456");
         this.callAPI(rq,"10000");
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1001") && !this.messageResponse.equals(""))

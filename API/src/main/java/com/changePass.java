@@ -79,7 +79,7 @@ public class changePass {
     @Test
     public void ChangePass1() {
         System.out.println("\nChange Pass 1: Successfully, code 1000");
-        this.getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        this.getAccessToken("vanvanvanvanvanvanvanvan@gmail.com","123456");
         String rq= this.creRequest("123456","123456","123456");
         this.callAPI(rq);
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
@@ -90,7 +90,7 @@ public class changePass {
     @Test
     public void ChangePass2() {
         System.out.println("\nChange Pass 2: Re_Pass != New_Pass, code 1000");
-        this.getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        this.getAccessToken("vanvanvanvanvanvanvanvan@gmail.com","123456");
         String rq= this.creRequest("123456","123456   ","123456");
         this.callAPI(rq);
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);

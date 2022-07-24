@@ -86,7 +86,7 @@ public class EditAuction {
     public void EditAuction1() {
         setStartDayOfAuction();
         System.out.println("Edit Auction test 1: Auction da duyet");
-        getAccessToken("vanvanvanvanvan@gmail.com", "123456");
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com", "123456");
         String rq= this.creRequest("1",startDayOfAuction,endDayOfAuction,"Thor");
         this.callAPI(rq,"1749");
         System.out.println("Code: " + this.codeResponse + "\nMessage: " + this.messageResponse + "\nData:" + this.dataResponse);
@@ -99,9 +99,9 @@ public class EditAuction {
     public void EditAuction2() {
         setStartDayOfAuction();
         System.out.println("Edit Auction test 2: Edit thanh cong");
-        getAccessToken("vanvanvanvanvan@gmail.com", "123456");
-        String rq= this.creRequest("1",startDayOfAuction,endDayOfAuction,"Thor");
-        this.callAPI(rq,"2133");
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com", "123456");
+        String rq= this.creRequest("1",startDayOfAuction,endDayOfAuction,"Thorrrrrrrrrrrrrrrrrrrrrrrrrrrr");
+        this.callAPI(rq,"2336");
         System.out.println("Code: " + this.codeResponse + "\nMessage: " + this.messageResponse + "\nData:" + this.dataResponse);
         if(this.codeResponse.equals("1000") && !this.messageResponse.equals(""))
             System.out.println("Finished! Satisfied!");
@@ -112,7 +112,7 @@ public class EditAuction {
     public void EditAuction3() {
         setStartDayOfAuction();
         System.out.println("Edit Auction test 3: Edit khong thanh cong do khong phai phien dau gia User tao");
-        getAccessToken("vanvanvanvanvanvan@gmail.com", "123456");
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com", "123456");
         String rq= this.creRequest("1",startDayOfAuction,endDayOfAuction,"Thorrrrrrr");
         this.callAPI(rq,"2133");
         System.out.println("Code: " + this.codeResponse + "\nMessage: " + this.messageResponse + "\nData:" + this.dataResponse);

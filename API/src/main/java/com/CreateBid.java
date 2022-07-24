@@ -74,8 +74,8 @@ public class CreateBid {
     @Test
     public void CreatBid1() {
         System.out.println("\nCreatBid test 1: Successfully ");
-        String rq=this.creRequest("660000000000",null);
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        String rq=this.creRequest("699000000000",null);
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com","123456");
         this.callAPI(rq, "1749");
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1000") && !this.messageResponse.equals(""))
@@ -86,7 +86,7 @@ public class CreateBid {
     public void CreatBid2() {
         System.out.println("\nCreatBid test 2: Tra gia khong lon hon gia cao nhat hien tai ");
         String rq=this.creRequest("650000000000",null);
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com","123456");
         this.callAPI(rq, "1749");
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1001") && !this.messageResponse.equals(""))
@@ -97,7 +97,7 @@ public class CreateBid {
     public void CreatBid3() {
         System.out.println("\nCreatBid test 3: Tra gia cho phien dau gia khong ton tai");
         String rq=this.creRequest("650000000000",null);
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com","123456");
         this.callAPI(rq, "10000");
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1001") && !this.messageResponse.equals(""))
@@ -107,8 +107,8 @@ public class CreateBid {
     @Test
     public void CreatBid4() {
         System.out.println("\nCreatBid test 4: Phien dau gia da het han");
-        String rq=this.creRequest("650000000000",null);
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        String rq=this.creRequest("750000000000",null);
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com","123456");
         this.callAPI(rq, "1");
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1008") && !this.messageResponse.equals(""))

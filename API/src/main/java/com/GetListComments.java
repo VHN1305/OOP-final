@@ -13,23 +13,23 @@ import org.junit.Test;
 public class GetListComments {
     @Test
     public void GetListComments(){
-            JSONObject request = new JSONObject();
+        JSONObject request = new JSONObject();
 
-            baseURI = constant.BaseURL;
+        baseURI = constant.BaseURL;
 
-            request.put("index", "1");
-            request.put("count", "20");
+        request.put("index", "1");
+        request.put("count", "20");
 
-            String accessToken = login.getAccessToken();
-            Response response = given().
-                    header("Content-Type","application/json").
-                    header("Authorization","bearer"+accessToken).
-                    contentType(ContentType.JSON).
-                    accept(ContentType.JSON).
-                    body(request.toJSONString()).
-                    when().
-                    get("/comments/1749");
-            System.out.println(response.getBody().asPrettyString());
+        String accessToken = login.getAccessToken();
+        Response response = given().
+                header("Content-Type","application/json").
+                header("Authorization","bearer"+accessToken).
+                contentType(ContentType.JSON).
+                accept(ContentType.JSON).
+                body(request.toJSONString()).
+                when().
+                get("/comments/1749");
+        System.out.println(response.getBody().asPrettyString());
     }
     private String access_token;
     private String codeResponse;
@@ -75,7 +75,7 @@ public class GetListComments {
     public void GetListComment1() {
         System.out.println("\nGetListComment 1: Successfully ");
         String rq=this.creRequest("1","1");
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com","123456");
         this.callAPI(rq, "1749");
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1000") && !this.messageResponse.equals(""))
@@ -86,7 +86,7 @@ public class GetListComments {
     public void GetListComment2() {
         System.out.println("\nGetListComment 2: Index Null ");
         String rq=this.creRequest(null,"1");
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com","123456");
         this.callAPI(rq, "1749");
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1001") && !this.messageResponse.equals(""))
@@ -97,7 +97,7 @@ public class GetListComments {
     public void GetListComment3() {
         System.out.println("\nGetListComment 3: Count Null ");
         String rq=this.creRequest("1",null);
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com","123456");
         this.callAPI(rq, "1749");
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1001") && !this.messageResponse.equals(""))
@@ -108,7 +108,7 @@ public class GetListComments {
     public void GetListComment4() {
         System.out.println("\nGetListComment 3: Count and index Null ");
         String rq=this.creRequest(null,null);
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com","123456");
         this.callAPI(rq, "1749");
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1001") && !this.messageResponse.equals(""))

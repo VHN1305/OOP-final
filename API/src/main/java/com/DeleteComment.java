@@ -72,8 +72,8 @@ public class DeleteComment {
     public void DeleteComment1() {
         System.out.println("\nDelete Comment 1: Successfully ");
         String rq=this.creRequest();
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
-        this.callAPI(rq, "1104");
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com","123456");
+        this.callAPI(rq, "1163");
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1000") && !this.messageResponse.equals(""))
             System.out.println("Finished! Satisfied!");
@@ -83,7 +83,7 @@ public class DeleteComment {
     public void DeleteComment2() {
         System.out.println("\nDelete Comment 2: Xoa comment cua user khac trong phien dau gia cua minh ");
         String rq=this.creRequest();
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com","123456");
         this.callAPI(rq, "1082");
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1000") && !this.messageResponse.equals(""))
@@ -94,7 +94,7 @@ public class DeleteComment {
     public void DeleteComment3() {
         System.out.println("\nDelete Comment 3: Xoa comment cua user khac");
         String rq=this.creRequest();
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com","123456");
         this.callAPI(rq, "1089");
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1001") && !this.messageResponse.equals(""))

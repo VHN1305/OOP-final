@@ -95,7 +95,7 @@ public class EditItem {
 //        getAuctionID();
         System.out.println("\nCreatItem test 2: Phien dau gia da duoc duyet");
         String rq=this.creRequest("Hoang Thanh Thang Long 1","2","3","Great","11",null);
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com","123456");
         this.callAPI(rq, "466");
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1005") && !this.messageResponse.equals(""))
@@ -109,7 +109,7 @@ public class EditItem {
         RandomSeries();
         System.out.println("\nCreatItem test 1: Successfully");
         String rq=this.creRequest("Hoang Thanh Thang Long 1","2","3","Great",this.randomSeries,null);
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com","123456");
         this.callAPI(rq, "510");
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("9995") && !this.messageResponse.equals(""))
@@ -118,4 +118,3 @@ public class EditItem {
 //        assert(rp.message != null && !"".equals(rp.message));
     }
 }
-

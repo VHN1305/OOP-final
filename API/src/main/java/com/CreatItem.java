@@ -101,7 +101,7 @@ public class CreatItem {
 //        getAuctionID();
         System.out.println("\nCreatItem test 1: Phien dau gia da ton tai item ");
         String rq=this.creRequest("Hoang Thanh Thang Long 1","2","3","Great","11",null);
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com","123456");
         this.callAPI(rq, "2134");
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("9995") && !this.messageResponse.equals(""))
@@ -113,7 +113,7 @@ public class CreatItem {
     public void CreatItem2() {
         System.out.println("\nCreatItem test 2: AuctionID khong tton tai");
         String rq=this.creRequest("Hoang Thanh Thang Long 1","2","3","Great","11",null);
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com","123456");
         this.callAPI(rq, "10000");
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("9996") && !this.messageResponse.equals(""))
@@ -127,7 +127,7 @@ public class CreatItem {
         RandomSeries();
         System.out.println("\nCreatItem test 3: Successfully");
         String rq=this.creRequest("Hoang Thanh Thang Long 1","1000","3","Great",this.randomSeries,null);
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com","123456");
         this.callAPI(rq, this.auctionID);
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1000") && !this.messageResponse.equals(""))
@@ -142,7 +142,7 @@ public class CreatItem {
         getAuctionID();
         System.out.println("\nCreatItem test 4: Gia khoi diem am, but code is 1000");
         String rq=this.creRequest("Hoang Thanh Thang Long 1","-2","3","Great",this.randomSeries,null);
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com","123456");
         this.callAPI(rq, this.auctionID);
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1000") && !this.messageResponse.equals(""))

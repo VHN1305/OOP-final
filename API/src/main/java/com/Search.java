@@ -77,7 +77,7 @@ public class Search {
     public void Search1() {
         System.out.println("\nSearch 1: Tim theo gia khoi diem ");
         String rq=this.creRequest("1","1");
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("van5@gmail.com","123456");
         this.callAPI(rq);
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1000") && !this.messageResponse.equals(""))
@@ -88,7 +88,7 @@ public class Search {
     public void Search2() {
         System.out.println("\nSearch 2: Tim theo thoi gian bat dau ");
         String rq=this.creRequest("2","2022-05-31");
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("van5@gmail.com","123456");
         this.callAPI(rq);
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1000") && !this.messageResponse.equals(""))
@@ -99,7 +99,7 @@ public class Search {
     public void Search3() {
         System.out.println("\nSearch 3: Tim theo thoi diem ket thuc ");
         String rq=this.creRequest("3","2022-05-31");
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("van5@gmail.com","123456");
         this.callAPI(rq);
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1000") && !this.messageResponse.equals(""))
@@ -110,7 +110,7 @@ public class Search {
     public void Search4() {
         System.out.println("\nSearch 4: Tim kiem theo ten cua phien dau gia ");
         String rq=this.creRequest("4","Thor - Love and Thunder");
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("van5@gmail.com","123456");
         this.callAPI(rq);
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1000") && !this.messageResponse.equals(""))
@@ -121,7 +121,7 @@ public class Search {
     public void Search5() {
         System.out.println("\nSearch 5: Type khong trong khoang [1,4] ");
         String rq=this.creRequest("5","Thor - Love and Thunder");
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("van5@gmail.com","123456");
         this.callAPI(rq);
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1001") && !this.messageResponse.equals(""))
@@ -132,7 +132,7 @@ public class Search {
     public void Search6() {
         System.out.println("\nSearch 5: Type is null ");
         String rq=this.creRequest(null,"Thor - Love and Thunder");
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("van5@gmail.com","123456");
         this.callAPI(rq);
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1001") && !this.messageResponse.equals(""))

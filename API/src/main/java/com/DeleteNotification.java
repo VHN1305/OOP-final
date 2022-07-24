@@ -69,8 +69,8 @@ public class DeleteNotification {
     public void DeleteNotification1() {
         System.out.println("\nDeleteNotification 1: Successfully ");
         String rq=this.creRequest();
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
-        this.callAPI(rq,"1781");
+        getAccessToken("van5@gmail.com","123456");
+        this.callAPI(rq,"2332");
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1000") && !this.messageResponse.equals(""))
             System.out.println("Finished! Satisfied!");
@@ -80,7 +80,7 @@ public class DeleteNotification {
     public void DeleteNotification2() {
         System.out.println("\nDeleteNotification 2: Khong co quyen ");
         String rq=this.creRequest();
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com","123456");
         this.callAPI(rq,"1785");
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1001") && !this.messageResponse.equals(""))

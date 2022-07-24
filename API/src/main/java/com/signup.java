@@ -22,7 +22,7 @@ public class signup {
         RestAssured.baseURI = constant.BaseURL;
         RequestSpecification httpRequest = RestAssured.given();
         JSONObject request = new JSONObject();
-        request.put("email","h@ninh@hust.edu.vn");
+        request.put("email","haha==@hust.edu.vn");
         request.put("password","123456");
         request.put("re_pass","123456");
         request.put("address","HN");

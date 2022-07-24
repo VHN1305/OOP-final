@@ -31,7 +31,7 @@ public class deleteAuction {
                 accept(ContentType.JSON).
                 body(request.toJSONString()).
                 when().
-                post("/auctions/deleteAuction/1758");
+                post("/auctions/deleteAuction/1749");
         ResponseBody body = response.getBody();
         System.out.println(body.asPrettyString());
     }
@@ -72,7 +72,7 @@ public class deleteAuction {
     @Test
     public void DeleteAuction1() {
         System.out.println("Delete Auction test 1: Auction da duyet");
-        getAccessToken("vanvanvanvanvan@gmail.com", "123456");
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com", "123456");
         String rq= this.creRequest();
         this.callAPI(rq,"1749");
         System.out.println("Code: " + this.codeResponse + "\nMessage: " + this.messageResponse + "\nData:" + this.dataResponse);
@@ -84,7 +84,7 @@ public class deleteAuction {
     @Test
     public void DeleteAuction2() {
         System.out.println("Delete Auction test 2: Successfully");
-        getAccessToken("vanvanvanvanvan@gmail.com", "123456");
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com", "123456");
         String rq= this.creRequest();
         this.callAPI(rq,"2133");
         System.out.println("Code: " + this.codeResponse + "\nMessage: " + this.messageResponse + "\nData:" + this.dataResponse);
@@ -96,7 +96,7 @@ public class deleteAuction {
     @Test
     public void DeleteAuction3() {
         System.out.println("Delete Auction test 3: Khong co quyen xoa");
-        getAccessToken("vanvanvanvanvan@gmail.com", "123456");
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com", "123456");
         String rq= this.creRequest();
         this.callAPI(rq,"1");
         System.out.println("Code: " + this.codeResponse + "\nMessage: " + this.messageResponse + "\nData:" + this.dataResponse);

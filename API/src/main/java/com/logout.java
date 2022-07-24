@@ -68,7 +68,7 @@ public class logout {
     @Test
     public void Logout1() {
         System.out.println("\nLogout test 1: Log out");
-        this.getAccessToken("vanvanvanvanvan@gmail.com", "123456");
+        this.getAccessToken("vanvanvanvanvanvanvanvan@gmail.com", "123456");
         this.callAPI(this.access_token);
         System.out.println("Code: " + this.codeResponse + "\nMessage: " + this.messageResponse + "\nData:" + this.dataResponse);
         if (this.codeResponse.equals("1000") && !this.messageResponse.equals(""))

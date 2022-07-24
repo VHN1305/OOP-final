@@ -21,7 +21,7 @@ public class login {
         RestAssured.baseURI = constant.BaseURL;
         RequestSpecification httpRequest = RestAssured.given();
         JSONObject request = new JSONObject();
-        request.put("email","vanvanvanvanvanvan@gmail.com");
+        request.put("email","vanvanvanvanvanvanvanvan@gmail.com");
         request.put("password","123456");
         httpRequest.body(request.toJSONString());
         Response response = httpRequest.header("Content-Type","application/json").contentType(ContentType.JSON).
@@ -34,7 +34,7 @@ public class login {
         RestAssured.baseURI = constant.BaseURL;
         RequestSpecification httpRequest = RestAssured.given();
         JSONObject request = new JSONObject();
-        request.put("email","vanvanvanvanvan@gmail.com");
+        request.put("email","vanvanvanvanvanvanvanvan@gmail.com");
         request.put("password","123456");
         httpRequest.body(request.toJSONString());
         Response response = httpRequest.header("Content-Type","application/json").contentType(ContentType.JSON).
@@ -96,7 +96,7 @@ public class login {
     @Test
     public void Login1() {
         System.out.println("\nLogin test 1: The email or password is incorrect:");
-        String rq= this.creRequest("vanvanvanvanvan@gmail.com","123");
+        String rq= this.creRequest("vanvanvanvanvanvanvanvan@gmail.com","123");
         this.callAPI(rq);
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1002") && !this.messageResponse.equals(""))
@@ -118,7 +118,7 @@ public class login {
     @Test
     public void Login3() {
         System.out.println("\nLogin test 3: The email and password are correct, the code shall be 1000:");
-        String rq= this.creRequest("vanvanvanvanvan@gmail.com","123456");
+        String rq= this.creRequest("vanvanvanvanvanvanvanvan@gmail.com","123456");
         this.callAPI(rq);
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1000") && this.messageResponse.equals("OK"))

@@ -74,7 +74,7 @@ public class AcceptMaxBid {
     public void AccepMaxBid1() {
         System.out.println("\nAccepMaxBid test 1: Phien dau gia chua ket thuc ");
         String rq=this.creRequest("Bi lua roi!!!");
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com","123456");
         this.callAPI(rq, "1749");
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1009") && !this.messageResponse.equals(""))
@@ -85,7 +85,7 @@ public class AcceptMaxBid {
     public void AccepMaxBid2() {
         System.out.println("\nAccepMaxBid test 2: Khong co quyen ");
         String rq=this.creRequest("Bi lua roi!!!");
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com","123456");
         this.callAPI(rq, "1");
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1006") && !this.messageResponse.equals(""))
@@ -96,7 +96,7 @@ public class AcceptMaxBid {
     public void AccepMaxBid3() {
         System.out.println("\nAccepMaxBid test 3: Successfully ");
         String rq=this.creRequest("Bi lua roi!!!");
-        getAccessToken("vanvanvanvanvan@gmail.com","123456");
+        getAccessToken("vanvanvanvanvanvanvanvan@gmail.com","123456");
         this.callAPI(rq, "2156");
         System.out.println("Code: "+this.codeResponse+"\nMessage: "+this.messageResponse+"\nData:"+this.dataResponse);
         if(this.codeResponse.equals("1009") && !this.messageResponse.equals(""))

@@ -27,5 +27,4 @@ public class GetDetailsAuctions {
         ResponseBody body = response.getBody();
         System.out.println(body.asPrettyString());
     }
-
 }
